@@ -112,4 +112,5 @@ function sm_query_loop_pre_render_block( $pre_render, $block ) {
 		);
 	}
 	return $pre_render;
-}add_filter( 'pre_render_block', 'sm_query_loop_pre_render_block', 10, 2 );
+}
+add_filter( 'pre_render_block', 'sm_query_loop_pre_render_block', 10, 2 );
