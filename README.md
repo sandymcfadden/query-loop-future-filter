@@ -14,8 +14,8 @@ Perfect for showing upcoming events, future scheduled posts, or filtering out ol
 
 ## Installation
 
-1. Build the plugin with instructions below
-2. Upload the plugin files to `/wp-content/plugins/query-loop-future-filter`
+1. Download the latest release from the release section
+2. Install the plugin through the 'Plugins' screen in WordPress
 3. Activate the plugin through the 'Plugins' screen in WordPress
 
 ## Usage
