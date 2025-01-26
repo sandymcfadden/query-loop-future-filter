@@ -5,6 +5,10 @@
  * Version: 1.0.0
  * Author: Sandy McFadden
  * Author URI: https://sandy.mcfadden.blog
+ * Plugin URI: https://sandy.mcfadden.blog/2025/01/25/query-loop-future-filter-plugin/
+ * License: GPL2
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: query-loop-future-filter
  *
  */
 
