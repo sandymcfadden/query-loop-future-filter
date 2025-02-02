@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Query Loop Future Filter
  * Description: Adds a relative date filtering options to the core Query Loop Block
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Sandy McFadden
  * Author URI: https://sandy.mcfadden.blog
  * Plugin URI: https://sandy.mcfadden.blog/2025/01/25/query-loop-future-filter-plugin/
@@ -71,11 +71,11 @@ function sm_query_loop_rest_query( $args, $request ) {
 	
 	if ( 'future' === $date_range ) {
 		$args['date_query'] = array(
-			'after' => date( 'Y-m-d' ),
+			'after' => current_time('Y-m-d 00:00:00'),
 		);
 	} elseif ( 'past' === $date_range ) {
 		$args['date_query'] = array(
-			'before' => date( 'Y-m-d' ),
+			'before' => current_time('Y-m-d 00:00:00'),
 		);
 	}
 	
@@ -99,11 +99,11 @@ function sm_query_loop_pre_render_block( $pre_render, $block ) {
 
 					if ( 'future' === $date_range ) {
 						$query['date_query'] = array(
-							'after' => date( 'Y-m-d' ),
+							'after' => current_time('Y-m-d 00:00:00'),
 						);
 					} elseif ( 'past' === $date_range ) {
 						$query['date_query'] = array(
-							'before' => date( 'Y-m-d' ),
+							'before' => current_time('Y-m-d 00:00:00'),
 						);
 					}
 				}
