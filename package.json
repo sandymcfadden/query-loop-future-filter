@@ -1,6 +1,6 @@
 {
     "name": "query-loop-future-filter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Adds a relative date filtering options to the core Query Loop Block",
     "scripts": {
         "build": "wp-scripts build src/index.js --output-path=build/",
